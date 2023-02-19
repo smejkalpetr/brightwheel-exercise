@@ -8,17 +8,61 @@
 
 /* Begin PBXBuildFile section */
 		1D584D8329A0D7AD005B0D8D /* BrightwheelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D584D8229A0D7AD005B0D8D /* BrightwheelApp.swift */; };
-		1D584D8529A0D7AD005B0D8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D584D8429A0D7AD005B0D8D /* ContentView.swift */; };
 		1D584D8729A0D7AE005B0D8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D584D8629A0D7AE005B0D8D /* Assets.xcassets */; };
 		1D584D8A29A0D7AE005B0D8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D584D8929A0D7AE005B0D8D /* Preview Assets.xcassets */; };
+		1D584D9329A0D83F005B0D8D /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 1D584D9229A0D83F005B0D8D /* Resolver */; };
+		1D584D9F29A0D9B9005B0D8D /* TopRepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D584D9E29A0D9B9005B0D8D /* TopRepositoriesViewModel.swift */; };
+		1D584DA129A0D9C6005B0D8D /* TopRepositoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D584DA029A0D9C6005B0D8D /* TopRepositoriesView.swift */; };
+		1D584DA429A0DA7B005B0D8D /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D584DA329A0DA7B005B0D8D /* Repository.swift */; };
+		1D584DAC29A0DC92005B0D8D /* GitHubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D584DAB29A0DC92005B0D8D /* GitHubService.swift */; };
+		1D584DAF29A0DD43005B0D8D /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D584DAE29A0DD43005B0D8D /* NetworkProvider.swift */; };
+		1D584DB329A0DDC5005B0D8D /* Providers+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D584DB229A0DDC5005B0D8D /* Providers+Injection.swift */; };
+		1D584DB529A0DDD8005B0D8D /* Services+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D584DB429A0DDD8005B0D8D /* Services+Injection.swift */; };
+		1D584DB729A0DE21005B0D8D /* Resolver+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D584DB629A0DE21005B0D8D /* Resolver+Injection.swift */; };
+		1D584DBB29A0E58D005B0D8D /* NetworkEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D584DBA29A0E58D005B0D8D /* NetworkEndpoint.swift */; };
+		1D584DBD29A0E614005B0D8D /* NetworkMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D584DBC29A0E614005B0D8D /* NetworkMethod.swift */; };
+		1D584DBF29A0E737005B0D8D /* NetworkProviderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D584DBE29A0E737005B0D8D /* NetworkProviderError.swift */; };
+		1D584DC129A0E78A005B0D8D /* NetworkStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D584DC029A0E78A005B0D8D /* NetworkStatusCode.swift */; };
+		1D584DC429A0E7E7005B0D8D /* NetworkingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D584DC329A0E7E7005B0D8D /* NetworkingConstants.swift */; };
+		1D584DC629A0E92D005B0D8D /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D584DC529A0E92D005B0D8D /* GitHubAPI.swift */; };
+		1D584DD529A1A1FE005B0D8D /* NETRepositoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D584DD429A1A1FE005B0D8D /* NETRepositoryResponse.swift */; };
+		1D584DD729A1A6C6005B0D8D /* NETUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D584DD629A1A6C6005B0D8D /* NETUser.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1D584DB929A0E4E1005B0D8D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1D584D7F29A0D7AD005B0D8D /* Brightwheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brightwheel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D584D8229A0D7AD005B0D8D /* BrightwheelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightwheelApp.swift; sourceTree = "<group>"; };
-		1D584D8429A0D7AD005B0D8D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1D584D8629A0D7AE005B0D8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D584D8929A0D7AE005B0D8D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1D584D9E29A0D9B9005B0D8D /* TopRepositoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRepositoriesViewModel.swift; sourceTree = "<group>"; };
+		1D584DA029A0D9C6005B0D8D /* TopRepositoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRepositoriesView.swift; sourceTree = "<group>"; };
+		1D584DA329A0DA7B005B0D8D /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		1D584DAB29A0DC92005B0D8D /* GitHubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubService.swift; sourceTree = "<group>"; };
+		1D584DAE29A0DD43005B0D8D /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		1D584DB229A0DDC5005B0D8D /* Providers+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Providers+Injection.swift"; sourceTree = "<group>"; };
+		1D584DB429A0DDD8005B0D8D /* Services+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Services+Injection.swift"; sourceTree = "<group>"; };
+		1D584DB629A0DE21005B0D8D /* Resolver+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+Injection.swift"; sourceTree = "<group>"; };
+		1D584DBA29A0E58D005B0D8D /* NetworkEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEndpoint.swift; sourceTree = "<group>"; };
+		1D584DBC29A0E614005B0D8D /* NetworkMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMethod.swift; sourceTree = "<group>"; };
+		1D584DBE29A0E737005B0D8D /* NetworkProviderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProviderError.swift; sourceTree = "<group>"; };
+		1D584DC029A0E78A005B0D8D /* NetworkStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatusCode.swift; sourceTree = "<group>"; };
+		1D584DC329A0E7E7005B0D8D /* NetworkingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingConstants.swift; sourceTree = "<group>"; };
+		1D584DC529A0E92D005B0D8D /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
+		1D584DD429A1A1FE005B0D8D /* NETRepositoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NETRepositoryResponse.swift; sourceTree = "<group>"; };
+		1D584DD629A1A6C6005B0D8D /* NETUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NETUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D584D9329A0D83F005B0D8D /* Resolver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +96,12 @@
 		1D584D8129A0D7AD005B0D8D /* Brightwheel */ = {
 			isa = PBXGroup;
 			children = (
-				1D584D8229A0D7AD005B0D8D /* BrightwheelApp.swift */,
-				1D584D8429A0D7AD005B0D8D /* ContentView.swift */,
-				1D584D8629A0D7AE005B0D8D /* Assets.xcassets */,
-				1D584D8829A0D7AE005B0D8D /* Preview Content */,
+				1D584D9029A0D7B8005B0D8D /* Application */,
+				1D584DAD29A0DCE9005B0D8D /* Models */,
+				1D584DA629A0DB0F005B0D8D /* Modules */,
+				1D584DA529A0DAD6005B0D8D /* Services */,
+				1D584DA829A0DB3A005B0D8D /* Providers */,
+				1D584DC229A0E7D7005B0D8D /* Utilities */,
 			);
 			path = Brightwheel;
 			sourceTree = "<group>";
@@ -67,6 +114,107 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		1D584D9029A0D7B8005B0D8D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1D584D8229A0D7AD005B0D8D /* BrightwheelApp.swift */,
+				1D584D9A29A0D919005B0D8D /* DependencyInjection */,
+				1D584D8629A0D7AE005B0D8D /* Assets.xcassets */,
+				1D584D8829A0D7AE005B0D8D /* Preview Content */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1D584D9A29A0D919005B0D8D /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				1D584DB629A0DE21005B0D8D /* Resolver+Injection.swift */,
+				1D584DB229A0DDC5005B0D8D /* Providers+Injection.swift */,
+				1D584DB429A0DDD8005B0D8D /* Services+Injection.swift */,
+			);
+			path = DependencyInjection;
+			sourceTree = "<group>";
+		};
+		1D584D9B29A0D973005B0D8D /* TopRepositories */ = {
+			isa = PBXGroup;
+			children = (
+				1D584DA029A0D9C6005B0D8D /* TopRepositoriesView.swift */,
+				1D584D9E29A0D9B9005B0D8D /* TopRepositoriesViewModel.swift */,
+			);
+			path = TopRepositories;
+			sourceTree = "<group>";
+		};
+		1D584DA529A0DAD6005B0D8D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1D584DD129A19FB7005B0D8D /* NetworkModels */,
+				1D584DAA29A0DBC2005B0D8D /* GitHubService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1D584DA629A0DB0F005B0D8D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1D584D9B29A0D973005B0D8D /* TopRepositories */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1D584DA829A0DB3A005B0D8D /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				1D584DA929A0DB55005B0D8D /* NetworkProvider */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		1D584DA929A0DB55005B0D8D /* NetworkProvider */ = {
+			isa = PBXGroup;
+			children = (
+				1D584DAE29A0DD43005B0D8D /* NetworkProvider.swift */,
+				1D584DBA29A0E58D005B0D8D /* NetworkEndpoint.swift */,
+				1D584DBC29A0E614005B0D8D /* NetworkMethod.swift */,
+				1D584DBE29A0E737005B0D8D /* NetworkProviderError.swift */,
+				1D584DC029A0E78A005B0D8D /* NetworkStatusCode.swift */,
+			);
+			path = NetworkProvider;
+			sourceTree = "<group>";
+		};
+		1D584DAA29A0DBC2005B0D8D /* GitHubService */ = {
+			isa = PBXGroup;
+			children = (
+				1D584DAB29A0DC92005B0D8D /* GitHubService.swift */,
+				1D584DC529A0E92D005B0D8D /* GitHubAPI.swift */,
+			);
+			path = GitHubService;
+			sourceTree = "<group>";
+		};
+		1D584DAD29A0DCE9005B0D8D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1D584DA329A0DA7B005B0D8D /* Repository.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1D584DC229A0E7D7005B0D8D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1D584DC329A0E7E7005B0D8D /* NetworkingConstants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1D584DD129A19FB7005B0D8D /* NetworkModels */ = {
+			isa = PBXGroup;
+			children = (
+				1D584DD429A1A1FE005B0D8D /* NETRepositoryResponse.swift */,
+				1D584DD629A1A6C6005B0D8D /* NETUser.swift */,
+			);
+			path = NetworkModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,12 +225,16 @@
 				1D584D7B29A0D7AD005B0D8D /* Sources */,
 				1D584D7C29A0D7AD005B0D8D /* Frameworks */,
 				1D584D7D29A0D7AD005B0D8D /* Resources */,
+				1D584DB929A0E4E1005B0D8D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Brightwheel;
+			packageProductDependencies = (
+				1D584D9229A0D83F005B0D8D /* Resolver */,
+			);
 			productName = Brightwheel;
 			productReference = 1D584D7F29A0D7AD005B0D8D /* Brightwheel.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +263,9 @@
 				Base,
 			);
 			mainGroup = 1D584D7629A0D7AD005B0D8D;
+			packageReferences = (
+				1D584D9129A0D83F005B0D8D /* XCRemoteSwiftPackageReference "Resolver" */,
+			);
 			productRefGroup = 1D584D8029A0D7AD005B0D8D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +292,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D584D8529A0D7AD005B0D8D /* ContentView.swift in Sources */,
+				1D584DB329A0DDC5005B0D8D /* Providers+Injection.swift in Sources */,
+				1D584DBF29A0E737005B0D8D /* NetworkProviderError.swift in Sources */,
+				1D584DBD29A0E614005B0D8D /* NetworkMethod.swift in Sources */,
+				1D584DAF29A0DD43005B0D8D /* NetworkProvider.swift in Sources */,
 				1D584D8329A0D7AD005B0D8D /* BrightwheelApp.swift in Sources */,
+				1D584DD529A1A1FE005B0D8D /* NETRepositoryResponse.swift in Sources */,
+				1D584DB529A0DDD8005B0D8D /* Services+Injection.swift in Sources */,
+				1D584DC629A0E92D005B0D8D /* GitHubAPI.swift in Sources */,
+				1D584DA429A0DA7B005B0D8D /* Repository.swift in Sources */,
+				1D584DA129A0D9C6005B0D8D /* TopRepositoriesView.swift in Sources */,
+				1D584DAC29A0DC92005B0D8D /* GitHubService.swift in Sources */,
+				1D584DBB29A0E58D005B0D8D /* NetworkEndpoint.swift in Sources */,
+				1D584DC429A0E7E7005B0D8D /* NetworkingConstants.swift in Sources */,
+				1D584D9F29A0D9B9005B0D8D /* TopRepositoriesViewModel.swift in Sources */,
+				1D584DD729A1A6C6005B0D8D /* NETUser.swift in Sources */,
+				1D584DB729A0DE21005B0D8D /* Resolver+Injection.swift in Sources */,
+				1D584DC129A0E78A005B0D8D /* NetworkStatusCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +436,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Brightwheel/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Brightwheel/Application/Preview Content\"";
 				DEVELOPMENT_TEAM = DD8W27MCU7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -295,7 +465,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Brightwheel/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Brightwheel/Application/Preview Content\"";
 				DEVELOPMENT_TEAM = DD8W27MCU7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -339,6 +509,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1D584D9129A0D83F005B0D8D /* XCRemoteSwiftPackageReference "Resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Resolver";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1D584D9229A0D83F005B0D8D /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D584D9129A0D83F005B0D8D /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1D584D7729A0D7AD005B0D8D /* Project object */;
 }
