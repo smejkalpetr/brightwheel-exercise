@@ -43,7 +43,7 @@ public struct GitHubServiceImpl: GitHubService {
         let repoContributor = try await repositories.asyncReduce([NETRepository: NETUser?]()) { partialResult, repository in
             let endpoint = GitHubAPI.getTopContributor(owner: repository.owner.login, repositoryName: repository.name)
             
-            let data = try await networkProvider.request(endpoint)
+            guard let data = try? await networkProvider.request(endpoint) else { return partialResult }
             let contributors = try JSONDecoder().decode([NETUser].self, from: data)
             
             var dict = partialResult

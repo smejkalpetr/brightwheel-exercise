@@ -41,7 +41,11 @@ extension GitHubAPI: NetworkEndpoint {
         switch self {
         case .getTop100:
             return [
-                URLQueryItem(name: "q", value: "stars:>0"),
+                /*
+                 "stars:>50000" is because of GitHub API limitations,
+                 see https://stackoverflow.com/questions/56251307/get-the-top-10-javascript-opensource-repositories-ranked-by-star-using-github-gr
+                 */
+                URLQueryItem(name: "q", value: "stars:>50000"),
                 URLQueryItem(name: "sort", value: "stars"),
                 URLQueryItem(name: "order", value: "desc"),
                 URLQueryItem(name: "per_page", value: "100")
