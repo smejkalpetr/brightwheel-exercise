@@ -50,8 +50,11 @@ struct TopRepositoriesView: View {
                     .padding()
                     
                     ForEach(viewModel.state.repositories) { repository in
-                        Text(repository.name)
-                        Text(repository.topContributor ?? "None") 
+                        VStack {
+                            Text(repository.name)
+                            Text(String(repository.starCount))
+                        }
+                        Text(repository.topContributor ?? "None")
                     }
                     .padding()
                 }
