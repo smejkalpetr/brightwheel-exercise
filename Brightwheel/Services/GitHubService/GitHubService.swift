@@ -44,10 +44,10 @@ public struct GitHubServiceImpl: GitHubService {
             let endpoint = GitHubAPI.getTopContributor(owner: repository.owner.login, repositoryName: repository.name)
             
             let data = try await networkProvider.request(endpoint)
-            let contributor = try JSONDecoder().decode([NETUser].self, from: data)
+            let contributors = try JSONDecoder().decode([NETUser].self, from: data)
             
             var dict = partialResult
-            dict[repository] = contributor.first
+            dict[repository] = contributors.sorted { $0.contributions > $1.contributions }.first
             return dict
         }
         
