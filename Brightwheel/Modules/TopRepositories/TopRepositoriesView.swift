@@ -52,7 +52,10 @@ struct TopRepositoriesView: View {
                     ForEach(viewModel.state.repositories) { repository in
                         VStack {
                             Text(repository.name)
+                                .multilineTextAlignment(.center)
+                                .fontWeight(.semibold)
                             Text(String(repository.starCount))
+                                .font(.footnote)
                         }
                         Text(repository.topContributor ?? "None")
                     }
